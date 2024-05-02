@@ -312,7 +312,7 @@ header {
 }
 
 .audi{
-    height: 35vh;
+    height: 44vh;
     object-fit: scale-down;
 }
 
@@ -553,11 +553,14 @@ footer {
 
 .div__wsp {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 5px;
 }
 
 
 .logo__wsp {
-    width: 40px;
+    width: 2%;
 }
 
 .div__redes__footer {
