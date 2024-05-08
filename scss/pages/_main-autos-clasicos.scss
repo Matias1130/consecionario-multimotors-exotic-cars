@@ -1,0 +1,74 @@
+main{
+    .div__clasicos__inicial{
+        height: 100px;
+        background-color: #c84a61;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .titulo__usados{
+            font-size: 4rem;
+            color: #ffffff;
+            font-family: "PT serif";
+        }
+    }
+    .descripcion__clasicos{
+        padding-top: 15px;
+        .descripcion{
+            font-family: "PT serif";
+            font-size: 1.7rem;
+            text-align: center;
+        }
+    }
+    .usados{
+        padding-bottom: 20px;
+        div{
+            div{
+                .primer__carrusel{
+                    padding-top: 20px;
+                    div{
+                        div{
+                            .audi{
+                                height: 44vh;
+                                object-fit: scale-down;
+                            }
+                        }
+                    }
+                    .boton__carrusel{
+                        background-color: #acacac48;
+                        &:hover{
+                            background-color: #dedede64;
+                        }
+                    }
+                }
+                .div__grilla{
+                    padding-top: 10px;
+                    .marca{
+                        font-size: 1.3rem;
+                    }
+                    .descripcion__grilla{
+                        font-size: 2rem;
+                        border-bottom: 1px solid #151242;
+                    }
+                    .div__link__consulta{
+                        display: flex;
+                        justify-content: center;
+                        .link__consulta{
+                            padding: 5px;
+                            font-family: monospace;
+                            border-radius: 5px;
+                            background-color: #000;
+                            border: 1px solid #ffffff;
+                            text-decoration: none;
+                            color: #fbfbfb;
+                            box-shadow: 0 0 10px #000;
+                            transition: transform 0.5s ease;
+                            &:hover{
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+main{
+    .div__main{
+        background-image: url(../assets/img/consecionario.png);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 25px 0;
+        display: flex;
+        justify-content: center;
+        .titulo__parrafo{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            align-items: center;
+            justify-content: center;
+            background-color: #2525259c;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px #d0d0d0;
+            .titulo__nosotros{
+                font-family: "Red Hat Display";
+                font-size: 5rem;
+                color: #e1e1e1;
+                font-style: italic;
+                padding: 50px 0 25px 0;
+                text-align: center;
+            }
+            .linea__nosotros{
+                width: 30%;
+                height: 2px;
+                background-color: #BF0426;
+            }
+            .parrafo__nosotros{
+                text-align: center;
+                font-family: "PT serif";
+                font-size: 3rem;
+                padding: 30px 100px 30px 150px;
+                color: #ffffff;
+            }
+        }
+    }
+}

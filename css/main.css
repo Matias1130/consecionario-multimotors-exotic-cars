@@ -1,0 +1,780 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  background-image: url(../assets/img/fondo-footer.jpg);
+  background-size: cover;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header .div__nav {
+  padding: 0 !important;
+}
+header .div__nav nav div a .nav__logo {
+  width: 200px;
+}
+header .div__nav nav div .div__ul {
+  width: 100%;
+  height: 100%;
+  justify-content: right;
+}
+header .div__nav nav div .div__ul ul li .nav__link {
+  font-size: 1.5rem;
+  padding: 15px !important;
+  transition: transform 0.5s ease;
+}
+header .div__nav nav div .div__ul ul li .nav__link:hover {
+  transform: scale(1.1);
+  font-weight: bolder;
+}
+header .line {
+  height: 1px;
+  background-color: rgb(133, 133, 133);
+}
+
+.container .video__inicio {
+  padding-top: 15px;
+  width: 100%;
+}
+
+.div__contenedor {
+  display: flex;
+  column-gap: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.div__contenedor .card {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+}
+.div__contenedor .card .titulo__card {
+  font-family: "PT serif";
+  font-size: 4rem;
+  color: #151242;
+}
+.div__contenedor .card .parrafo__card {
+  font-family: "PT serif";
+  padding: 0 30px;
+  font-size: 2rem;
+}
+.div__contenedor .card .div__boton {
+  padding: 20px;
+}
+.div__contenedor .card .div__boton .boton__card {
+  position: relative;
+  font-size: 1.2em;
+  padding: 0.7em 1.4em;
+  background-color: #BF0426;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5em;
+  color: #DEDEDE;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+}
+.div__contenedor .card .div__boton .boton__card::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, rgb(33, 33, 33) 0%, rgb(33, 33, 33) 50%, rgb(150, 4, 31) 50%, rgb(191, 4, 38) 60%);
+  border-radius: 0 0 0.5em 0;
+  box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+.div__contenedor .card .div__boton .boton__card:hover::before {
+  width: 1.6em;
+  height: 1.6em;
+}
+.div__contenedor .card .div__boton .boton__card:active {
+  box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
+  transform: translate(0.1em, 0.1em);
+}
+.div__contenedor .card .div__boton .boton__card b .link__boton {
+  text-decoration: none;
+  color: rgb(230, 230, 230);
+}
+
+.div__titulo__carrusel {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.div__titulo__carrusel .titulo__carrusel {
+  font-family: "PT serif";
+  font-size: 3rem;
+  color: #151242;
+}
+.div__titulo__carrusel .parrafo__carrusel {
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+.contenedor__usados {
+  width: 50%;
+}
+
+.usados {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.usados .usados__titulo {
+  font-size: 3rem;
+  color: #151242;
+  font-family: "PT serif";
+}
+
+.usados__destacados {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  padding-top: 20px;
+  text-align: center;
+  gap: 20px;
+  grid-template-areas: "img1 img2 img3" "text1 text2 text3";
+}
+.usados__destacados .foto__usado {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #BF0426;
+  transition: transform 0.6s ease;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.usados__destacados .foto__usado:hover {
+  transform: scale(1.1);
+  position: relative;
+  z-index: 10;
+  filter: grayscale(0);
+}
+.usados__destacados .foto__usado .foto__peugeot {
+  grid-area: img1;
+}
+.usados__destacados .foto__usado .foto__a5 {
+  grid-area: img2;
+}
+.usados__destacados .foto__usado .foto__hilux {
+  grid-area: img3;
+}
+.usados__destacados .descripcion__usado {
+  font-family: "PT serif";
+  font-size: 3rem;
+  color: #151242;
+}
+.usados__destacados .usado__peugeot {
+  grid-area: text1;
+}
+.usados__destacados .usado__audi {
+  grid-area: text2;
+}
+.usados__destacados .usado__hilux {
+  grid-area: text3;
+}
+
+.div__inicial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #82aee8;
+}
+.div__inicial .titulo__usados {
+  font-size: 4rem;
+  color: #ffffff;
+  font-family: "PT serif";
+}
+
+.usados {
+  padding-bottom: 20px;
+}
+.usados div div .primer__carrusel {
+  padding-top: 20px;
+}
+.usados div div .primer__carrusel div div .foto__audi {
+  height: 44vh;
+  object-fit: scale-down;
+}
+.usados div div .primer__carrusel .boton__carrusel {
+  background-color: rgba(172, 172, 172, 0.2823529412);
+}
+.usados div div .primer__carrusel .boton__carrusel:hover {
+  background-color: rgba(222, 222, 222, 0.3921568627);
+}
+.usados div div .div__grilla {
+  padding-top: 10px;
+}
+.usados div div .div__grilla .marca {
+  font-size: 1.3rem;
+}
+.usados div div .div__grilla .descripcion__grilla {
+  font-size: 2rem;
+  border-bottom: 1px solid #151242;
+}
+.usados div div .div__grilla .div__link__consulta {
+  display: flex;
+  justify-content: center;
+}
+.usados div div .div__grilla .div__link__consulta .link__consulta {
+  padding: 5px;
+  font-family: monospace;
+  border-radius: 5px;
+  background-color: #000;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  color: #fbfbfb;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.5s ease;
+}
+.usados div div .div__grilla .div__link__consulta .link__consulta:hover {
+  transform: scale(1.1);
+}
+
+main .div__clasicos__inicial {
+  height: 100px;
+  background-color: #c84a61;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .div__clasicos__inicial .titulo__usados {
+  font-size: 4rem;
+  color: #ffffff;
+  font-family: "PT serif";
+}
+main .descripcion__clasicos {
+  padding-top: 15px;
+}
+main .descripcion__clasicos .descripcion {
+  font-family: "PT serif";
+  font-size: 1.7rem;
+  text-align: center;
+}
+main .usados {
+  padding-bottom: 20px;
+}
+main .usados div div .primer__carrusel {
+  padding-top: 20px;
+}
+main .usados div div .primer__carrusel div div .audi {
+  height: 44vh;
+  object-fit: scale-down;
+}
+main .usados div div .primer__carrusel .boton__carrusel {
+  background-color: rgba(172, 172, 172, 0.2823529412);
+}
+main .usados div div .primer__carrusel .boton__carrusel:hover {
+  background-color: rgba(222, 222, 222, 0.3921568627);
+}
+main .usados div div .div__grilla {
+  padding-top: 10px;
+}
+main .usados div div .div__grilla .marca {
+  font-size: 1.3rem;
+}
+main .usados div div .div__grilla .descripcion__grilla {
+  font-size: 2rem;
+  border-bottom: 1px solid #151242;
+}
+main .usados div div .div__grilla .div__link__consulta {
+  display: flex;
+  justify-content: center;
+}
+main .usados div div .div__grilla .div__link__consulta .link__consulta {
+  padding: 5px;
+  font-family: monospace;
+  border-radius: 5px;
+  background-color: #000;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  color: #fbfbfb;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.5s ease;
+}
+main .usados div div .div__grilla .div__link__consulta .link__consulta:hover {
+  transform: scale(1.1);
+}
+
+main .div__main {
+  background-image: url(../assets/img/consecionario.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+}
+main .div__main .titulo__parrafo {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(37, 37, 37, 0.6117647059);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #d0d0d0;
+}
+main .div__main .titulo__parrafo .titulo__nosotros {
+  font-family: "Red Hat Display";
+  font-size: 5rem;
+  color: #e1e1e1;
+  font-style: italic;
+  padding: 50px 0 25px 0;
+  text-align: center;
+}
+main .div__main .titulo__parrafo .linea__nosotros {
+  width: 30%;
+  height: 2px;
+  background-color: #BF0426;
+}
+main .div__main .titulo__parrafo .parrafo__nosotros {
+  text-align: center;
+  font-family: "PT serif";
+  font-size: 3rem;
+  padding: 30px 100px 30px 150px;
+  color: #ffffff;
+}
+
+main .div__form {
+  background-image: url(../assets/img/fondo-contacto.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+main .div__form .formulario {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "form1" "input1" "form2" "input2" "form3" "input3" "form4" "input4";
+  text-align: center;
+  padding: 50px 0 50px 0;
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.7803921569);
+  margin: 40px 0 40px 0;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #b36262;
+  gap: 30px;
+}
+main .div__form .formulario label .p__form {
+  font-family: "PT sefir", monospace;
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-decoration: underline;
+}
+main .div__form .formulario label .p__form .p__form--1 {
+  grid-area: form1;
+}
+main .div__form .formulario label .p__form .p__form--2 {
+  grid-area: form2;
+}
+main .div__form .formulario label .p__form .p__form--3 {
+  grid-area: form3;
+}
+main .div__form .formulario label .p__form .p__form--4 {
+  grid-area: form4;
+}
+main .div__form .formulario label .input {
+  padding: 10px 30px 10px 30px;
+  background-color: #000;
+  color: #ffffff;
+  font-family: monospace;
+  font-size: 2rem;
+  width: 70%;
+  border-bottom: 1px solid #BF0426;
+  border-right: 1px solid #BF0426;
+  border-top: none;
+  border-left: none;
+  border-radius: 10px;
+}
+main .div__form .formulario label .input .input--1 {
+  grid-area: input1;
+}
+main .div__form .formulario label .input .input--2 {
+  grid-area: input2;
+}
+main .div__form .formulario label .input .input--3 {
+  grid-area: input3;
+}
+main .div__form .formulario label .input .input--4 {
+  grid-area: input4;
+}
+main .div__form .formulario label .text__area {
+  width: 70%;
+  height: 100px;
+  background-color: #000;
+  font-family: monospace;
+  color: #fdfdfd;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #BF0426;
+  border-right: 1px solid #BF0426;
+  border-top: none;
+  border-left: none;
+  border-radius: 15px;
+}
+main .div__form .formulario .animated-button {
+  margin: auto;
+  position: relative;
+  width: 25%;
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.2509803922);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1254901961);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+main .div__form .formulario .animated-button:hover {
+  box-shadow: 0 0 0 5px rgba(243, 33, 33, 0.3764705882);
+  color: #ffffff;
+}
+main .div__form .formulario .animated-button:hover span:last-child {
+  width: 150px;
+  height: 150px;
+  opacity: 1;
+}
+main .div__form .formulario .animated-button:active {
+  scale: 0.95;
+}
+main .div__form .formulario .animated-button span:first-child {
+  position: relative;
+  z-index: 1;
+}
+main .div__form .formulario .animated-button span:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #f32121;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+footer {
+  background-image: url(../assets/img/fondo-footer.jpg);
+  background-size: cover;
+}
+footer .div__logo__footer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+footer .div__logo__footer .logo__footer {
+  width: 200px;
+}
+footer .div__logo__footer .parrafo__footer {
+  padding-top: 10px;
+  font-family: "PT serif";
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+footer .div__logo__footer .div__wsp {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 5px;
+}
+footer .div__redes__footer {
+  padding: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  gap: 20px;
+}
+footer .div__redes__footer .boton__face {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #0163E0;
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: #0163E0;
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+}
+footer .div__redes__footer .boton__face::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+footer .div__redes__footer .boton__face:hover {
+  color: #fff;
+  border: 1px solid #0163E0;
+}
+footer .div__redes__footer .boton__face:hover svg {
+  fill: currentColor;
+}
+footer .div__redes__footer .boton__face:hover::before {
+  box-shadow: inset 0 0 0 10em #0163E0;
+}
+footer .div__redes__footer .boton__face svg {
+  fill: #0163E0;
+  height: 25px;
+  width: 25px;
+}
+footer .div__redes__footer .boton__face span {
+  margin: 10px;
+}
+footer .div__redes__footer .boton__face span .link__redes {
+  text-decoration: none;
+}
+footer .div__redes__footer .boton__face span .link__redes:hover {
+  color: #fff;
+}
+footer .div__redes__footer .boton {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: rgb(255, 0, 0);
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+}
+footer .div__redes__footer .boton:hover {
+  color: #ffffff;
+  border: 1px solid rgb(255, 0, 0);
+}
+footer .div__redes__footer .boton:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
+}
+footer .div__redes__footer .boton::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+footer .div__redes__footer .boton svg {
+  fill: currentColor;
+  height: 25px;
+  width: 25px;
+}
+footer .div__redes__footer .boton span {
+  margin: 10px;
+}
+footer .div__redes__footer .boton span .link__redes {
+  text-decoration: none;
+}
+footer .div__redes__footer .boton span .link__redes:hover {
+  color: #fff;
+}
+footer .div__redes__footer .boton span .link__redes--rojo {
+  color: red;
+}
+footer .div__footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+footer .div__footer .copy {
+  font-family: monospace;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 992px) {
+  header div nav div .boton__hamburguesa {
+    width: 20%;
+    border: none;
+  }
+  header div nav div .boton__hamburguesa:focus {
+    box-shadow: none;
+  }
+  header div nav div .boton__hamburguesa span .menu__hamburguesa {
+    width: 30%;
+  }
+  .main__index .contenedor__usados {
+    width: 90%;
+  }
+  .main__index .usados__destacados .descripcion__usado {
+    font-size: 2.3rem;
+  }
+  .main__nosotros .titulo__parrafo {
+    width: 80%;
+  }
+  .main__nosotros .titulo__parrafo .titulo__nosotros {
+    font-size: 4rem;
+  }
+  .main__nosotros .titulo__parrafo .parrafo__nosotros {
+    font-size: 2rem;
+  }
+  .main__contacto .div__form .formulario {
+    width: 80%;
+  }
+  .main__contacto .div__form .formulario .animated-button {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header div nav div .boton__hamburguesa {
+    width: 20%;
+    border: none;
+  }
+  header div nav div .boton__hamburguesa:focus {
+    box-shadow: none;
+  }
+  header div nav div .boton__hamburguesa span .menu__hamburguesa {
+    width: 40%;
+  }
+  .main__index .div__contenedor .card .titulo__card {
+    font-size: 2rem;
+  }
+  .main__index .contenedor__usados {
+    width: 90%;
+  }
+  .main__index .usados__destacados .foto__usado {
+    width: 100%;
+  }
+  .main__index .usados__destacados .descripcion__usado {
+    font-size: 2rem;
+  }
+  .main__nosotros .titulo__parrafo {
+    width: 95%;
+  }
+  .main__nosotros .titulo__parrafo .titulo__nosotros {
+    font-size: 3.5rem;
+  }
+  .main__nosotros .titulo__parrafo .parrafo__nosotros {
+    font-size: 2rem;
+    padding: 5px 10px 5px 10px;
+  }
+  .main__contacto .div__form .formulario {
+    width: 80%;
+  }
+  .main__contacto .div__form .formulario .animated-button {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 576px) {
+  header div nav div .boton__hamburguesa {
+    width: 20%;
+    border: none;
+  }
+  header div nav div .boton__hamburguesa:focus {
+    box-shadow: none;
+  }
+  header div nav div .boton__hamburguesa span .menu__hamburguesa {
+    width: 50%;
+  }
+  header div nav div .div__ul ul li .nav__link {
+    font-size: 1.3rem;
+  }
+  .main__index .div__contenedor {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .main__index .div__contenedor .card .titulo__card {
+    font-size: 1.8rem;
+  }
+  .main__index .div__contenedor .card .parrafo_card {
+    font-size: 1.4rem;
+  }
+  .main__index .div__titulo__carrusel .parrafo__carrusel {
+    display: none;
+  }
+  .main__index .contenedor__usados {
+    width: 100%;
+  }
+  .main__index .usados__destacados {
+    grid-template-columns: 1fr;
+    grid-template-areas: "img1" "text1" "img2" "text2" "img3" "text3";
+  }
+  .main__index .usados__destacados .descripcion__usado {
+    font-size: 2rem;
+  }
+  .main__usados div .titulo__usados {
+    font-size: 2rem;
+  }
+  .main__clasicos .div__clasicos__inicial .descripcion__clasicos .descripcion {
+    font-size: 1.4rem;
+  }
+  .main__nosotros .div__main .titulo__parrafo {
+    width: 100%;
+  }
+  .main__nosotros .div__main .titulo__parrafo .titulo__nosotros {
+    font-size: 2rem;
+  }
+  .main__nosotros .div__main .titulo__parrafo .parrafo__nosotros {
+    font-size: 1.5rem;
+    padding: 5px 10px 5px 10px;
+  }
+  .main__contacto .div__form .formulario {
+    width: 100%;
+  }
+  .main__contacto .div__form .formulario label .p__form {
+    font-size: 2rem;
+  }
+  .main__contacto .div__form .formulario .animated-button {
+    width: 30%;
+  }
+  footer {
+    background-image: none;
+    background-color: #000;
+  }
+  footer .copy {
+    font-size: 1.2rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

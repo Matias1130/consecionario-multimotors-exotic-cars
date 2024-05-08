@@ -1,0 +1,235 @@
+@media screen and (max-width:992px){
+    header{
+        div{
+            nav{
+                div{
+                    .boton__hamburguesa{
+                        width: 20%;
+                        border: none;
+                        &:focus{
+                            box-shadow: none;
+                        }
+                        span{
+                            .menu__hamburguesa{
+                                width: 30%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main__index{//main index//
+        .contenedor__usados{
+            width: 90%;
+        }
+        .usados__destacados{
+            .descripcion__usado{
+                font-size: 2.3rem;
+            }
+        }
+    }
+    .main__nosotros{
+        .titulo__parrafo{
+            width: 80%;
+            .titulo__nosotros{
+                font-size: 4rem;
+            }
+            .parrafo__nosotros{
+                font-size: 2rem;
+            }
+        }
+    }
+    .main__contacto{
+        .div__form{
+            .formulario{
+                width: 80%;
+                .animated-button{
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    header{
+        div{
+            nav{
+                div{
+                    .boton__hamburguesa{
+                        width: 20%;
+                        border: none;
+                        &:focus{
+                            box-shadow: none;
+                        }
+                        span{
+                            .menu__hamburguesa{
+                                width: 40%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main__index{//main index//
+        .div__contenedor{
+            .card{
+                .titulo__card{
+                    font-size: 2rem;
+                }
+            }
+        }
+        .contenedor__usados{
+            width: 90%;
+        }
+        .usados__destacados{
+            .foto__usado{
+                width: 100%;
+            }
+            .descripcion__usado{
+                font-size: 2rem;
+            }
+        }
+    }
+    .main__nosotros{
+        .titulo__parrafo{
+            width: 95%;
+            .titulo__nosotros{
+                font-size: 3.5rem;
+            }
+            .parrafo__nosotros{
+                font-size: 2rem;
+                padding: 5px 10px 5px 10px;
+            }
+        }
+    }
+    .main__contacto{
+        .div__form{
+            .formulario{
+                width: 80%;
+                .animated-button{
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    header{
+        div{
+            nav{
+                div{
+                    .boton__hamburguesa{
+                        width: 20%;
+                        border: none;
+                        &:focus{
+                            box-shadow: none;
+                        }
+                        span{
+                            .menu__hamburguesa{
+                                width: 50%;
+                            }
+                        }
+                    }
+                    .div__ul{
+                        ul{
+                            li{
+                                .nav__link{
+                                    font-size: 1.3rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main__index{
+        .div__contenedor{
+            flex-direction: column;
+            gap: 20px;
+            .card{
+                .titulo__card{
+                    font-size: 1.8rem;
+                }
+                .parrafo_card{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .div__titulo__carrusel{
+            .parrafo__carrusel{
+                display: none;
+            }
+        }
+        .contenedor__usados{
+            width: 100%;
+        }
+        .usados__destacados{
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "img1"
+            "text1"
+            "img2"
+            "text2"
+            "img3" 
+            "text3";
+            .descripcion__usado{
+                font-size: 2rem;
+            }
+        }
+    }
+    .main__usados{
+        div{
+            .titulo__usados{
+                font-size: 2rem;
+            }
+        }
+    }
+    .main__clasicos{
+        .div__clasicos__inicial{
+            .descripcion__clasicos{
+                .descripcion{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+    .main__nosotros{
+        .div__main{
+            .titulo__parrafo{
+                width: 100%;
+                .titulo__nosotros{
+                    font-size: 2rem;
+                }
+                .parrafo__nosotros{
+                    font-size: 1.5rem;
+                    padding: 5px 10px 5px 10px;
+                }
+            }
+        }
+    }
+    .main__contacto{
+        .div__form{
+            .formulario{
+                width: 100%;
+                label{
+                    .p__form{
+                        font-size: 2rem;
+                    }
+                }
+                .animated-button{
+                    width: 30%;
+                }
+            }
+        }
+    }
+    footer{
+        background-image: none;
+        background-color: #000;
+        .copy{
+            font-size: 1.2rem;
+        }
+    }
+}

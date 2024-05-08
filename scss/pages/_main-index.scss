@@ -1,0 +1,142 @@
+.container{
+    .video__inicio{
+        padding-top: 15px;
+        width: 100%;
+    }
+}
+.div__contenedor{
+    display: flex;
+    column-gap: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .card{
+        display: flex;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+        .titulo__card{
+            font-family: "PT serif";
+            font-size: 4rem;
+            color: #151242;
+        }
+        .parrafo__card{
+            font-family: "PT serif";
+            padding: 0 30px;
+            font-size: 2rem;
+        }
+        .div__boton{
+            padding: 20px;
+            .boton__card{
+                position: relative;
+                font-size: 1.2em;
+                padding: 0.7em 1.4em;
+                background-color: #BF0426;
+                text-decoration: none;
+                border: none;
+                border-radius: 0.5em;
+                color: #DEDEDE;
+                box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+                &::before{
+                    position: absolute;
+                    content: '';
+                    height: 0;
+                    width: 0;
+                    top: 0;
+                    left: 0;
+                    background: linear-gradient(135deg, rgba(33, 33, 33, 1) 0%, rgba(33, 33, 33, 1) 50%, rgba(150, 4, 31, 1) 50%, rgba(191, 4, 38, 1) 60%);
+                    border-radius: 0 0 0.5em 0;
+                    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+                    transition: 0.3s;
+                }
+                &:hover::before{
+                    width: 1.6em;
+                    height: 1.6em;
+                }
+                &:active{
+                    box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
+                    transform: translate(0.1em, 0.1em);
+                }
+                b{
+                    .link__boton{
+                        text-decoration: none;
+                        color: rgb(230, 230, 230);
+                    }
+                }
+            }
+        }
+    }
+}
+.div__titulo__carrusel{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .titulo__carrusel{
+        font-family: "PT serif";
+        font-size: 3rem;
+        color: #151242;
+    }
+    .parrafo__carrusel{
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+}
+.contenedor__usados{
+    width: 50%;
+}
+.usados{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    .usados__titulo{
+        font-size: 3rem;
+        color: #151242;
+        font-family: "PT serif";
+    }
+}
+.usados__destacados{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    padding-top: 20px;
+    text-align: center;
+    gap: 20px;
+    grid-template-areas:
+    "img1 img2 img3"
+    "text1 text2 text3";
+    .foto__usado{
+        width: 100%;
+        border-radius: 50%;
+        box-shadow: 0 0 15px #BF0426;
+        transition: transform 0.6s ease;
+        filter: grayscale(100%);
+        transition: 0.6s;
+        &:hover{
+            transform: scale(1.1);
+            position: relative;
+            z-index: 10;
+            filter: grayscale(0);
+        }
+        .foto__peugeot{
+            grid-area: img1;
+        }
+        .foto__a5{
+            grid-area: img2;
+        }
+        .foto__hilux{
+            grid-area: img3;
+        }
+    }
+    .descripcion__usado{
+        font-family: "PT serif";
+        font-size: 3rem;
+        color: #151242;
+    }
+    .usado__peugeot{
+        grid-area: text1;
+    }
+    .usado__audi{
+        grid-area: text2;
+    }
+    .usado__hilux{
+        grid-area: text3;
+    }
+}

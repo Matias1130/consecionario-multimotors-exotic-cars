@@ -1,4 +1,4 @@
-html {
+/* html {
     font-size: 62.5%;
 }
 
@@ -14,51 +14,51 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
-}
+} */
 
-.div__nav {
+/* .div__nav {
     padding: 0 !important;
-}
+} */
 
-.nav__logo {
+/* .nav__logo {
     width: 200px;
-}
+} */
 
-.div__ul {
+/* .div__ul {
     width: 100%;
     height: 100%;
     justify-content: right;
-}
+} */
 
-.nav__link {
+/* .nav__link {
     font-size: 1.5rem;
     padding: 15px !important;
     transition: transform 0.5s ease;
-}
+} */
 
-.nav__link:hover {
+/* .nav__link:hover {
     transform: scale(1.1);
     font-weight: bolder;
-}
+} */
 
-.line {
+/* .line {
     height: 1px;
     background-color: rgb(133, 133, 133);
-}
-
+} */
+/* 
 .video__inicio {
     padding-top: 15px;
     width: 100%;
-}
-
+} */
+/* 
 .div__contenedor {
     display: flex;
     column-gap: 5%;
     padding-top: 20px;
     padding-bottom: 20px;
-}
+} */
 
-.card {
+/* .card {
     display: flex;
     gap: 20px;
     text-align: center;
@@ -69,20 +69,20 @@ header {
     font-family: "PT serif";
     font-size: 4rem;
     color: #151242;
-}
+} */
 
-.parrafo__card {
+/* .parrafo__card {
     font-family: "PT serif";
     padding: 0 30px;
     font-size: 2rem;
 
-}
+} */
 
-.div__boton {
+/* .div__boton {
     padding: 20px;
-}
+} */
 
-.boton__card {
+/* .boton__card {
     position: relative;
     font-size: 1.2em;
     padding: 0.7em 1.4em;
@@ -115,46 +115,46 @@ header {
 .boton__card:active {
     box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
     transform: translate(0.1em, 0.1em);
-}
+} */
 
-.link__boton {
+/* .link__boton {
     text-decoration: none;
     color: rgb(230, 230, 230);
-}
+} */
 
-.contenedor__usados {
+/* .contenedor__usados {
     width: 50%;
-}
+} */
 
-.div__titulo__carrusel {
+/* .div__titulo__carrusel {
     display: flex;
     flex-direction: column;
     text-align: center;
-}
+} */
 
-.titulo__carrusel {
+/* .titulo__carrusel {
     font-family: "PT serif";
     font-size: 3rem;
     color: #151242;
-}
+} */
 
-.parrafo__carrusel {
+/* .parrafo__carrusel {
     padding: 20px;
     font-size: 1.5rem;
 
-}
-.usados{
+} */
+/* .usados{
     display: flex;
     justify-content: center;
     padding-top: 20px;
-}
+} */
 
-.usados__titulo{
+/* .usados__titulo{
     font-size: 3rem;
     color: #151242;
     font-family: "PT serif";
-}
-
+} */
+/* 
 .usados__destacados{
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
@@ -164,16 +164,16 @@ header {
     grid-template-areas:
     "img1 img2 img3"
     "text1 text2 text3";
-}
+} */
 
-.descripcion__usado{
+/* .descripcion__usado{
     font-family: "PT serif";
     font-size: 3rem;
     color: #151242;
-}
+} */
 
 
-.foto__usado{
+/* .foto__usado{
     width: 100%;
     border-radius: 50%;
     box-shadow: 0 0 15px #BF0426;
@@ -188,9 +188,9 @@ header {
     position: relative;
     z-index: 10;
     filter: grayscale(0);
-}
+} */
 
-.foto__peugeot{
+/* .foto__peugeot{
     grid-area: img1;
 }
 
@@ -213,12 +213,12 @@ header {
 
 .usado__hilux{
     grid-area: text3;
-}
+} */
 
 
 /*estilo pagina autos usados*/
 
-.div__inicial {
+/* .div__inicial {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -231,39 +231,39 @@ header {
     color: #ffffff;
     font-family: "PT serif";
 
-}
+} */
 
-.usados {
+/* .usados {
     padding-bottom: 20px;
-}
-
+} */
+/* 
 .boton__carrusel {
     background-color: #acacac48;
 }
 
 .boton__carrusel:hover {
     background-color: #dedede64;
-}
+} */
 
 
-.primer__carrusel {
+/* .primer__carrusel {
     padding-top: 20px;
-}
-
+} */
+/* 
 .div__grilla {
     padding-top: 10px;
-}
+} */
 
-.marca {
+/* .marca {
     font-size: 1.3rem;
-}
+/* } */
 
-.descripcion__grilla {
+/* .descripcion__grilla {
     font-size: 2rem;
     border-bottom: 1px solid #151242;
-}
+} */
 
-.div__link__consulta {
+/* .div__link__consulta {
     display: flex;
     justify-content: center;
 }
@@ -282,26 +282,26 @@ header {
 
 .link__consulta:hover {
     transform: scale(1.1);
-}
+} */
 
 
-.foto__audi {
+/* .foto__audi {
     height: 44vh;
     object-fit: scale-down;
 }
-
+ */
 
 /*Estilo Autos Clasicos*/
 
-.div__clasicos__inicial {
+/* .div__clasicos__inicial {
     height: 100px;
     background-color: #c84a61;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.descripcion__clasicos {
+/* .descripcion__clasicos {
     padding-top: 15px;
 }
 
@@ -309,16 +309,16 @@ header {
     font-family: "PT serif";
     font-size: 1.7rem;
     text-align: center;
-}
+} */
 
-.audi{
+/* .audi{
     height: 44vh;
     object-fit: scale-down;
-}
+} */
 
 /*Estilo hoja nosotros*/
 
-.div__main {
+/* .div__main {
     background-image: url(../assets/img/consecionario.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -326,9 +326,9 @@ header {
     padding: 25px 0;
     display: flex;
     justify-content: center;
-}
+} */
 
-.titulo__parrafo {
+/* .titulo__parrafo {
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -339,8 +339,8 @@ header {
     padding-bottom: 20px;
     border-radius: 20px;
     box-shadow: 0 0 10px #d0d0d0;
-}
-
+} */
+/* 
 .titulo__nosotros {
     font-family: "Red Hat Display";
     font-size: 5rem;
@@ -362,11 +362,11 @@ header {
     font-size: 3rem;
     padding: 30px 100px 30px 150px;
     color: #ffffff;
-}
+} */
 
 /*Estilo hoja contacto*/
 
-.div__form {
+/* .div__form {
     background-image: url(../assets/img/fondo-contacto.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -374,9 +374,9 @@ header {
     display: flex;
     justify-content: center;
 
-}
+} */
 
-.formulario {
+/* .formulario {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -396,16 +396,16 @@ header {
     border-radius: 20px;
     box-shadow: 0 0 20px #b36262;
     gap: 30px;
-}
+} */
 
-.p__form {
+/* .p__form {
     font-family: "PT sefir", monospace;
     font-size: 2.5rem;
     color: #ffffff;
     text-decoration: underline;
-}
+} */
 
-.input {
+/* .input {
     padding: 10px 30px 10px 30px;
     background-color: #000;
     color: #ffffff;
@@ -463,9 +463,9 @@ header {
 
 .input--4{
     grid-area: input4;
-}
+} */
 
-.animated-button {
+/* .animated-button {
     margin:auto;
     position: relative;
     width: 25%;
@@ -515,87 +515,75 @@ header {
     height: 150px;
     opacity: 1;
 }
+ */
 
 
 
-
-
-/*Estilo footer*/
-
+/* 
 footer {
     margin-top: 20px;
     background-image: url(../assets/img/fondo-footer.jpg);
     background-size: cover;
-}
-
-.footer {
+} */
+/* .footer {
     background-image: url(../assets/img/prueba.jpg);
     background-attachment: fixed;
     margin-top: 0;
-}
-
+} */
+/* 
 .div__logo__footer {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
-}
+} */
 
-.logo__footer {
+/* .logo__footer {
     width: 200px;
-}
+} */
 
-.parrafo__footer {
-    padding-top: 10px;
-    font-family: "PT serif";
-    color: #ffffff;
-    font-size: 1.5rem;
-}
 
-.div__wsp {
+/* .div__wsp {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     column-gap: 5px;
-}
+} */
 
 
-.logo__wsp {
-    width: 2%;
-}
 
-.div__redes__footer {
+/* .div__redes__footer {
     padding: 20px;
     display: flex;
     width: 100%;
     justify-content: start;
     gap: 20px;
-}
+} */
 
-.div__footer {
+/* .div__footer {
     text-align: center;
     display: flex;
     flex-direction: column;
-}
+} */
 
-.copy {
+/* .copy {
     font-family: monospace;
     font-size: 1.4rem;
     color: #ffffff;
-}
+} */
 
-.link__redes {
+/* .link__redes {
     text-decoration: none;
-}
+} */
 
-.link__redes:hover {
+/* .link__redes:hover {
     color: #fff;
-}
+} */
 
-.link__redes--rojo {
+/* .link__redes--rojo {
     color: red;
-}
+} */
 
-.boton__face {
+/* .boton__face {
     background: transparent;
     position: relative;
     padding: 5px 15px;
@@ -612,19 +600,19 @@ footer {
     color: #0163E0;
     transition: color 0.3s 0.1s ease-out;
     text-align: center;
-}
+} */
 
-.boton__face svg {
+/* .boton__face svg {
     fill: #0163E0;
     height: 25px;
     width: 25px;
-}
+} */
 
-.boton__face span {
+/* .boton__face span {
     margin: 10px;
-}
+} */
 
-.boton__face::before {
+/* .boton__face::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -640,22 +628,22 @@ footer {
     text-align: center;
     transition: box-shadow 0.5s ease-out;
     z-index: -1;
-}
-
+} */
+/* 
 .boton__face:hover {
     color: #fff;
     border: 1px solid #0163E0;
-}
+} */
 
-.boton__face:hover svg {
+/* .boton__face:hover svg {
     fill: currentColor;
-}
-
+} */
+/* 
 .boton__face:hover::before {
     box-shadow: inset 0 0 0 10em #0163E0;
-}
+} */
 
-.boton {
+/* .boton {
     background: transparent;
     position: relative;
     padding: 5px 15px;
@@ -672,13 +660,13 @@ footer {
     color: rgb(255, 0, 0);
     transition: color 0.3s 0.1s ease-out;
     text-align: center;
-}
+} */
 
-.boton span {
+/* .boton span {
     margin: 10px;
-}
+} */
 
-.boton::before {
+/* .boton::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -703,62 +691,62 @@ footer {
 
 .boton:hover::before {
     box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
-}
+} */
 
-.boton svg {
+/* .boton svg {
     fill: currentColor;
     height: 25px;
     width: 25px;
-}
+} */
 
 /*Mediaquery 576px ,768p y 1024px*/
 @media screen and (max-width:992px) {
-    .boton__hamburguesa{
+    /* .boton__hamburguesa{
         width: 20%;
         border: none;
-    }
+    } */
 
-    .navbar-toggler:focus{
+    /* .navbar-toggler:focus{
         box-shadow: none;
-    }
+    } */
 
-    .menu__hamburguesa{
+    /* .menu__hamburguesa{
         width: 30%;
-    }
-
+    } */
+/* 
     .contenedor__usados {
         width: 90%;
-    }
-
+    } */
+/* 
     .descripcion__usado{
         font-size: 2.3rem;
-    }
+    } */
 
-    .titulo__parrafo {
+    /* .titulo__parrafo {
         width: 80%;
     }
 
     .titulo__nosotros {
         font-size: 4rem;
-    }
-
+    } */
+/* 
     .parrafo__nosotros {
         font-size: 2rem;
-    }
+    } */
 
-    
+/*     
     .formulario{
         width: 80%;
-    }
-
+    } */
+/* 
     .animated-button{
         width: 60%;
-    }
+    } */
 
 }
 
-@media screen and (max-width: 768px) {
-    .boton__hamburguesa{
+/* @media screen and (max-width: 768px) { */
+    /* .boton__hamburguesa{
         width: 20%;
         border: none;
     }
@@ -769,10 +757,10 @@ footer {
 
     .menu__hamburguesa{
         width: 40%;
-    }
+    } */
 
     
-    .contenedor__usados {
+    /* .contenedor__usados {
         width: 90%;
     }
 
@@ -786,8 +774,8 @@ footer {
 
     .titulo__card {
         font-size: 2rem;
-    }
-
+    } */
+/* 
     .titulo__parrafo {
         width: 95%;
     }
@@ -799,8 +787,8 @@ footer {
     .parrafo__nosotros {
         font-size: 2rem;
         padding: 5px 10px 5px 10px;
-    }
-
+    } */
+/* 
     .formulario{
         width: 80%;
     }
@@ -809,20 +797,20 @@ footer {
         width: 60%;
     }
 
-}
+} */
 
-@media screen and (max-width: 576px) {
-
-    .parrafo__carrusel{
+/* @media screen and (max-width: 576px) {
+/*  */
+    /* .parrafo__carrusel{
         display: none;
-    }
+    } */
 
-    .div__contenedor{
+    /* .div__contenedor{
         flex-direction: column;
         gap: 20px;
-    }
+    } */
     
-    .boton__hamburguesa{
+    /* .boton__hamburguesa{
         width: 20%;
         border: none;
     }
@@ -833,12 +821,12 @@ footer {
 
     .menu__hamburguesa{
         width: 50%;
-    }
-
+    } */
+/* 
     .nav__link{
         font-size: 1.3rem;
-    }
-
+    } */
+/* 
     .usados__destacados{
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -848,46 +836,46 @@ footer {
         "text2"
         "img3" 
         "text3";
-    }
+    } */
 
-    .descripcion__usado{
+    /* .descripcion__usado{
         font-size: 2rem;
-    }
-
+    } */
+/* 
     .contenedor__usados {
         width: 100%;
-    }
+    } */
 
-    .titulo__card {
+    /* .titulo__card {
         font-size: 1.8rem;
-    }
-
+    } */
+/* 
     .parrafo__card {
         font-size: 1.4rem;
-    }
-
+    } */
+/* 
     .titulo__usados{
         font-size: 2rem;
-    }
+    } */
 
-    .titulo__parrafo {
+    /* .titulo__parrafo {
         width: 100%;
     }
 
     .titulo__nosotros {
         font-size: 2rem;
-    }
+    } */
 
-    .descripcion{
+    /* .descripcion{
         font-size: 1.4rem;
-    }
+    } */
 
 
-    .parrafo__nosotros {
+    /* .parrafo__nosotros {
         font-size: 1.5rem;
         padding: 5px 10px 5px 10px;
-    }
-
+    } */
+/* 
     .formulario{
         width: 100%;
     }
@@ -898,8 +886,8 @@ footer {
 
     .animated-button{
         width: 30%;
-    }
-
+    } */
+/* 
     .copy{
         font-size: 1.2rem;
     }
@@ -908,4 +896,4 @@ footer {
         background-image: none;
         background-color: #000;
     }
-}
+} */
