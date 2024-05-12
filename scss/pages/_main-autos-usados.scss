@@ -1,13 +1,16 @@
 .div__inicial{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex (column,center,center);
     height: 100px;
     background-color: #82aee8;
     .titulo__usados{
-        font-size: 4rem;
-        color: #ffffff;
-        font-family: "PT serif";
+        @include font (4rem,normal);
+        @extend %color-general;;
+        font-family: $fuente-principal;
+    }
+    .subtitulo__usados{
+        @include font (2.5rem,normal);
+        @extend %color-general;
+        font-family: $fuente-principal;
     }
 }
 .usados{
@@ -34,25 +37,25 @@
             .div__grilla{
                 padding-top: 10px;
                 .marca{
-                    font-size: 1.3rem;
+                    @include font (1.3rem,normal);
                 }
                 .descripcion__grilla{
                     font-size: 2rem;
-                    border-bottom: 1px solid #151242;
+                    border-bottom: 1px solid $color-principal-texto;
                 }
                 .div__link__consulta{
                     display: flex;
                     justify-content: center;
                     .link__consulta{
-                        padding: 5px;
-                        font-family: monospace;
-                        border-radius: 5px;
-                        background-color: #000;
-                        border: 1px solid #ffffff;
-                        text-decoration: none;
-                        color: #fbfbfb;
-                        box-shadow: 0 0 10px #000;
-                        transition: transform 0.5s ease;
+                        padding: map-get($map: $boton-consulta, $key: padding);
+                        font-family: map-get($map: $boton-consulta, $key:font-family );
+                        border-radius: map-get($map: $boton-consulta, $key:border-radius );
+                        background-color: map-get($map: $boton-consulta, $key:bg-color );
+                        border: map-get($map: $boton-consulta, $key:border );
+                        text-decoration: map-get($map: $boton-consulta, $key:text-decoration );
+                        color: map-get($map: $boton-consulta, $key:color );
+                        box-shadow: map-get($map: $boton-consulta, $key:box-shadow );
+                        transition: map-get($map: $boton-consulta, $key:transition );
                         &:hover{
                             transform: scale(1.1);
                         }

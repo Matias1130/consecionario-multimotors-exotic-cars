@@ -1,3 +1,11 @@
+main .div__form .formulario .animated-button:hover, main .div__form .formulario label .text__area, main .div__form .formulario label .input, main .div__form .formulario label .p__form, main .div__main .titulo__parrafo .parrafo__nosotros, main .div__main .titulo__parrafo .titulo__nosotros, main .div__clasicos__inicial .titulo__usados, .div__inicial .subtitulo__usados, .div__inicial .titulo__usados, .main__index .div__contenedor .card .div__boton .boton__card b .link__boton {
+  color: #ffffff;
+}
+
+main .div__form .formulario label .text__area, main .div__form .formulario label .input {
+  background-color: #000;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -43,39 +51,43 @@ header .line {
   background-color: rgb(133, 133, 133);
 }
 
-.container .video__inicio {
+.main__index .container .video__inicio {
   padding-top: 15px;
   width: 100%;
 }
-
-.div__contenedor {
+.main__index .div__contenedor {
   display: flex;
   column-gap: 5%;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.div__contenedor .card {
+.main__index .div__contenedor .card {
   display: flex;
-  gap: 20px;
-  text-align: center;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
+  text-align: center;
+  gap: 20px;
 }
-.div__contenedor .card .titulo__card {
-  font-family: "PT serif";
+.main__index .div__contenedor .card .titulo__card {
+  font-family: "Pt serif";
   font-size: 4rem;
+  font-weight: normal;
   color: #151242;
 }
-.div__contenedor .card .parrafo__card {
-  font-family: "PT serif";
+.main__index .div__contenedor .card .parrafo__card {
+  font-family: "Pt serif";
   padding: 0 30px;
   font-size: 2rem;
+  font-weight: normal;
 }
-.div__contenedor .card .div__boton {
+.main__index .div__contenedor .card .div__boton {
   padding: 20px;
 }
-.div__contenedor .card .div__boton .boton__card {
+.main__index .div__contenedor .card .div__boton .boton__card {
   position: relative;
-  font-size: 1.2em;
+  font-size: 1.2rem;
+  font-weight: normal;
   padding: 0.7em 1.4em;
   background-color: #BF0426;
   text-decoration: none;
@@ -84,7 +96,7 @@ header .line {
   color: #DEDEDE;
   box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
 }
-.div__contenedor .card .div__boton .boton__card::before {
+.main__index .div__contenedor .card .div__boton .boton__card::before {
   position: absolute;
   content: "";
   height: 0;
@@ -96,50 +108,52 @@ header .line {
   box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
   transition: 0.3s;
 }
-.div__contenedor .card .div__boton .boton__card:hover::before {
+.main__index .div__contenedor .card .div__boton .boton__card:hover::before {
   width: 1.6em;
   height: 1.6em;
 }
-.div__contenedor .card .div__boton .boton__card:active {
+.main__index .div__contenedor .card .div__boton .boton__card:active {
   box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
   transform: translate(0.1em, 0.1em);
 }
-.div__contenedor .card .div__boton .boton__card b .link__boton {
+.main__index .div__contenedor .card .div__boton .boton__card b .link__boton {
   text-decoration: none;
-  color: rgb(230, 230, 230);
 }
-
-.div__titulo__carrusel {
+.main__index .div__titulo__carrusel {
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
   text-align: center;
 }
-.div__titulo__carrusel .titulo__carrusel {
-  font-family: "PT serif";
+.main__index .div__titulo__carrusel .titulo__carrusel {
+  font-family: "Pt serif";
   font-size: 3rem;
+  font-weight: normal;
   color: #151242;
 }
-.div__titulo__carrusel .parrafo__carrusel {
+.main__index .div__titulo__carrusel .parrafo__carrusel {
   padding: 20px;
   font-size: 1.5rem;
+  font-weight: normal;
 }
-
-.contenedor__usados {
+.main__index .contenedor__usados {
   width: 50%;
 }
-
-.usados {
+.main__index .usados {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: stretch;
   padding-top: 20px;
 }
-.usados .usados__titulo {
+.main__index .usados .usados__titulo {
   font-size: 3rem;
+  font-weight: normal;
   color: #151242;
-  font-family: "PT serif";
+  font-family: "Pt serif";
 }
-
-.usados__destacados {
+.main__index .usados__destacados {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
   padding-top: 20px;
@@ -147,7 +161,7 @@ header .line {
   gap: 20px;
   grid-template-areas: "img1 img2 img3" "text1 text2 text3";
 }
-.usados__destacados .foto__usado {
+.main__index .usados__destacados .foto__usado {
   width: 100%;
   border-radius: 50%;
   box-shadow: 0 0 15px #BF0426;
@@ -155,38 +169,40 @@ header .line {
   filter: grayscale(100%);
   transition: 0.6s;
 }
-.usados__destacados .foto__usado:hover {
+.main__index .usados__destacados .foto__usado:hover {
   transform: scale(1.1);
   position: relative;
   z-index: 10;
   filter: grayscale(0);
 }
-.usados__destacados .foto__usado .foto__peugeot {
+.main__index .usados__destacados .foto__usado .foto__peugeot {
   grid-area: img1;
 }
-.usados__destacados .foto__usado .foto__a5 {
+.main__index .usados__destacados .foto__usado .foto__a5 {
   grid-area: img2;
 }
-.usados__destacados .foto__usado .foto__hilux {
+.main__index .usados__destacados .foto__usado .foto__hilux {
   grid-area: img3;
 }
-.usados__destacados .descripcion__usado {
-  font-family: "PT serif";
+.main__index .usados__destacados .descripcion__usado {
+  font-family: "Pt serif";
   font-size: 3rem;
+  font-weight: normal;
   color: #151242;
 }
-.usados__destacados .usado__peugeot {
+.main__index .usados__destacados .usado__peugeot {
   grid-area: text1;
 }
-.usados__destacados .usado__audi {
+.main__index .usados__destacados .usado__audi {
   grid-area: text2;
 }
-.usados__destacados .usado__hilux {
+.main__index .usados__destacados .usado__hilux {
   grid-area: text3;
 }
 
 .div__inicial {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100px;
@@ -194,8 +210,13 @@ header .line {
 }
 .div__inicial .titulo__usados {
   font-size: 4rem;
-  color: #ffffff;
-  font-family: "PT serif";
+  font-weight: normal;
+  font-family: "Pt serif";
+}
+.div__inicial .subtitulo__usados {
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-family: "Pt serif";
 }
 
 .usados {
@@ -219,6 +240,7 @@ header .line {
 }
 .usados div div .div__grilla .marca {
   font-size: 1.3rem;
+  font-weight: normal;
 }
 .usados div div .div__grilla .descripcion__grilla {
   font-size: 2rem;
@@ -247,20 +269,21 @@ main .div__clasicos__inicial {
   height: 100px;
   background-color: #c84a61;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 main .div__clasicos__inicial .titulo__usados {
   font-size: 4rem;
-  color: #ffffff;
-  font-family: "PT serif";
+  font-family: "Pt serif";
 }
 main .descripcion__clasicos {
   padding-top: 15px;
 }
 main .descripcion__clasicos .descripcion {
-  font-family: "PT serif";
+  font-family: "Pt serif";
   font-size: 1.7rem;
+  font-weight: normal;
   text-align: center;
 }
 main .usados {
@@ -284,9 +307,11 @@ main .usados div div .div__grilla {
 }
 main .usados div div .div__grilla .marca {
   font-size: 1.3rem;
+  font-weight: normal;
 }
 main .usados div div .div__grilla .descripcion__grilla {
   font-size: 2rem;
+  font-weight: normal;
   border-bottom: 1px solid #151242;
 }
 main .usados div div .div__grilla .div__link__consulta {
@@ -320,9 +345,9 @@ main .div__main {
 main .div__main .titulo__parrafo {
   display: flex;
   flex-direction: column;
-  width: 70%;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 70%;
   background-color: rgba(37, 37, 37, 0.6117647059);
   padding-top: 20px;
   padding-bottom: 20px;
@@ -332,7 +357,7 @@ main .div__main .titulo__parrafo {
 main .div__main .titulo__parrafo .titulo__nosotros {
   font-family: "Red Hat Display";
   font-size: 5rem;
-  color: #e1e1e1;
+  font-weight: normal;
   font-style: italic;
   padding: 50px 0 25px 0;
   text-align: center;
@@ -344,10 +369,10 @@ main .div__main .titulo__parrafo .linea__nosotros {
 }
 main .div__main .titulo__parrafo .parrafo__nosotros {
   text-align: center;
-  font-family: "PT serif";
+  font-family: "Pt serif";
   font-size: 3rem;
+  font-weight: normal;
   padding: 30px 100px 30px 150px;
-  color: #ffffff;
 }
 
 main .div__form {
@@ -372,9 +397,9 @@ main .div__form .formulario {
   gap: 30px;
 }
 main .div__form .formulario label .p__form {
-  font-family: "PT sefir", monospace;
+  font-family: "Pt serif", monospace;
   font-size: 2.5rem;
-  color: #ffffff;
+  font-weight: normal;
   text-decoration: underline;
 }
 main .div__form .formulario label .p__form .p__form--1 {
@@ -391,10 +416,9 @@ main .div__form .formulario label .p__form .p__form--4 {
 }
 main .div__form .formulario label .input {
   padding: 10px 30px 10px 30px;
-  background-color: #000;
-  color: #ffffff;
   font-family: monospace;
   font-size: 2rem;
+  font-weight: normal;
   width: 70%;
   border-bottom: 1px solid #BF0426;
   border-right: 1px solid #BF0426;
@@ -417,10 +441,9 @@ main .div__form .formulario label .input .input--4 {
 main .div__form .formulario label .text__area {
   width: 70%;
   height: 100px;
-  background-color: #000;
   font-family: monospace;
-  color: #fdfdfd;
   font-size: 1.5rem;
+  font-weight: normal;
   border-bottom: 1px solid #BF0426;
   border-right: 1px solid #BF0426;
   border-top: none;
@@ -435,9 +458,9 @@ main .div__form .formulario .animated-button {
   padding: 12px 24px;
   border: none;
   font-size: 16px;
+  font-weight: 600;
   background-color: inherit;
   border-radius: 100px;
-  font-weight: 600;
   color: rgba(255, 255, 255, 0.2509803922);
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1254901961);
   cursor: pointer;
@@ -446,7 +469,6 @@ main .div__form .formulario .animated-button {
 }
 main .div__form .formulario .animated-button:hover {
   box-shadow: 0 0 0 5px rgba(243, 33, 33, 0.3764705882);
-  color: #ffffff;
 }
 main .div__form .formulario .animated-button:hover span:last-child {
   width: 150px;

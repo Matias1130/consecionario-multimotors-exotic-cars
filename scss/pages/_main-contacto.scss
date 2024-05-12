@@ -28,9 +28,9 @@ main{
             gap: 30px;
             label{
                 .p__form{
-                    font-family: "PT sefir", monospace;
-                    font-size: 2.5rem;
-                    color: #ffffff;
+                    font-family: $fuente-principal, monospace;
+                    @include font (2.5rem,normal);
+                    @extend %color-general;
                     text-decoration: underline;
                     .p__form--1{
                         grid-area: form1;
@@ -47,10 +47,11 @@ main{
                 }
                 .input{
                     padding: 10px 30px 10px 30px;
-                    background-color: #000;
-                    color: #ffffff;
+                    @extend %bg-black;
+                    // background-color: #000;
+                    @extend %color-general;
                     font-family: monospace;
-                    font-size: 2rem;
+                    @include font (2rem,normal);
                     width: 70%;
                     border-bottom: 1px solid #BF0426;
                     border-right: 1px solid #BF0426;
@@ -73,10 +74,10 @@ main{
                 .text__area{
                     width: 70%;
                     height: 100px;
-                    background-color: #000;
+                    @extend %bg-black;
                     font-family: monospace;
-                    color: #fdfdfd;
-                    font-size: 1.5rem;
+                    @extend %color-general;
+                    @include font (1.5rem,normal);
                     border-bottom: 1px solid #BF0426;
                     border-right: 1px solid #BF0426;
                     border-top: none;
@@ -91,10 +92,9 @@ main{
                 display: inline-block;
                 padding: 12px 24px;
                 border: none;
-                font-size: 16px;
+                @include font (16px,600);
                 background-color: inherit;
                 border-radius: 100px;
-                font-weight: 600;
                 color: #ffffff40;
                 box-shadow: 0 0 0 2px #ffffff20;
                 cursor: pointer;
@@ -102,7 +102,7 @@ main{
                 transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
                 &:hover{
                     box-shadow: 0 0 0 5px #f3212160;
-                    color: #ffffff;
+                    @extend %color-general;
                 }
                 &:hover span:last-child{
                     width: 150px;

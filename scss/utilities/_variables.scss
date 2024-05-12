@@ -1,0 +1,15 @@
+$color-principal-texto : #151242 ;
+
+$fuente-principal : "Pt serif";
+
+$boton-consulta:(
+    padding: 5px,
+    font-family: monospace,
+    border-radius: 5px,
+    bg-color: #000,
+    border: 1px solid #ffffff,
+    text-decoration: none,
+    color: #fbfbfb,
+    box-shadow: 0 0 10px #000,
+    transition: transform 0.5s ease,
+)
