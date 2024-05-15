@@ -1,4 +1,6 @@
-main{
+// estilos del main de la pagina nosotros
+.main__nosotros{
+    // estilos para el contenedor principal
     .div__main{
         background-image: url(../assets/img/consecionario.png);
         background-attachment: fixed;
@@ -7,6 +9,7 @@ main{
         padding: 25px 0;
         display: flex;
         justify-content: center;
+        // estilos para los textos
         .titulo__parrafo{
             @include flex (column,center,center);
             width: 70%;

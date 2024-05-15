@@ -1,4 +1,6 @@
-main{
+// estilo del main de la pagina contacto
+.main__contacto{
+    // estilos del formulario de contacto
     .div__form{
         background-image: url(../assets/img/fondo-contacto.jpg);
         background-attachment: fixed;
@@ -85,6 +87,7 @@ main{
                     border-radius: 15px;
                 }
             }
+            // estilos del boton animado
             .animated-button{
                 margin:auto;
                 position: relative;

@@ -1,8 +1,8 @@
-main .div__form .formulario .animated-button:hover, main .div__form .formulario label .text__area, main .div__form .formulario label .input, main .div__form .formulario label .p__form, main .div__main .titulo__parrafo .parrafo__nosotros, main .div__main .titulo__parrafo .titulo__nosotros, main .div__clasicos__inicial .titulo__usados, .div__inicial .subtitulo__usados, .div__inicial .titulo__usados, .main__index .div__contenedor .card .div__boton .boton__card b .link__boton {
+.main__contacto .div__form .formulario .animated-button:hover, .main__contacto .div__form .formulario label .text__area, .main__contacto .div__form .formulario label .input, .main__contacto .div__form .formulario label .p__form, .main__nosotros .div__main .titulo__parrafo .parrafo__nosotros, .main__nosotros .div__main .titulo__parrafo .titulo__nosotros, .main__clasicos .div__clasicos__inicial .titulo__usados, .main__usados .div__inicial .subtitulo__usados, .main__usados .div__inicial .titulo__usados, .main__index .div__contenedor .card .div__boton .boton__card b .link__boton {
   color: #ffffff;
 }
 
-main .div__form .formulario label .text__area, main .div__form .formulario label .input {
+.main__contacto .div__form .formulario label .text__area, .main__contacto .div__form .formulario label .input {
   background-color: #000;
 }
 
@@ -200,7 +200,7 @@ header .line {
   grid-area: text3;
 }
 
-.div__inicial {
+.main__usados .div__inicial {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -208,49 +208,48 @@ header .line {
   height: 100px;
   background-color: #82aee8;
 }
-.div__inicial .titulo__usados {
+.main__usados .div__inicial .titulo__usados {
   font-size: 4rem;
   font-weight: normal;
   font-family: "Pt serif";
 }
-.div__inicial .subtitulo__usados {
+.main__usados .div__inicial .subtitulo__usados {
   font-size: 2.5rem;
   font-weight: normal;
   font-family: "Pt serif";
 }
-
-.usados {
+.main__usados .usados {
   padding-bottom: 20px;
 }
-.usados div div .primer__carrusel {
+.main__usados .usados div div .primer__carrusel {
   padding-top: 20px;
 }
-.usados div div .primer__carrusel div div .foto__audi {
+.main__usados .usados div div .primer__carrusel div div .foto__audi {
   height: 44vh;
   object-fit: scale-down;
 }
-.usados div div .primer__carrusel .boton__carrusel {
+.main__usados .usados div div .primer__carrusel .boton__carrusel {
   background-color: rgba(172, 172, 172, 0.2823529412);
 }
-.usados div div .primer__carrusel .boton__carrusel:hover {
+.main__usados .usados div div .primer__carrusel .boton__carrusel:hover {
   background-color: rgba(222, 222, 222, 0.3921568627);
 }
-.usados div div .div__grilla {
+.main__usados .usados div div .div__grilla {
   padding-top: 10px;
 }
-.usados div div .div__grilla .marca {
+.main__usados .usados div div .div__grilla .marca {
   font-size: 1.3rem;
   font-weight: normal;
 }
-.usados div div .div__grilla .descripcion__grilla {
+.main__usados .usados div div .div__grilla .descripcion__grilla {
   font-size: 2rem;
   border-bottom: 1px solid #151242;
 }
-.usados div div .div__grilla .div__link__consulta {
+.main__usados .usados div div .div__grilla .div__link__consulta {
   display: flex;
   justify-content: center;
 }
-.usados div div .div__grilla .div__link__consulta .link__consulta {
+.main__usados .usados div div .div__grilla .div__link__consulta .link__consulta {
   padding: 5px;
   font-family: monospace;
   border-radius: 5px;
@@ -261,11 +260,11 @@ header .line {
   box-shadow: 0 0 10px #000;
   transition: transform 0.5s ease;
 }
-.usados div div .div__grilla .div__link__consulta .link__consulta:hover {
+.main__usados .usados div div .div__grilla .div__link__consulta .link__consulta:hover {
   transform: scale(1.1);
 }
 
-main .div__clasicos__inicial {
+.main__clasicos .div__clasicos__inicial {
   height: 100px;
   background-color: #c84a61;
   display: flex;
@@ -273,52 +272,52 @@ main .div__clasicos__inicial {
   justify-content: center;
   align-items: center;
 }
-main .div__clasicos__inicial .titulo__usados {
+.main__clasicos .div__clasicos__inicial .titulo__usados {
   font-size: 4rem;
   font-family: "Pt serif";
 }
-main .descripcion__clasicos {
+.main__clasicos .descripcion__clasicos {
   padding-top: 15px;
 }
-main .descripcion__clasicos .descripcion {
+.main__clasicos .descripcion__clasicos .descripcion {
   font-family: "Pt serif";
   font-size: 1.7rem;
   font-weight: normal;
   text-align: center;
 }
-main .usados {
+.main__clasicos .usados {
   padding-bottom: 20px;
 }
-main .usados div div .primer__carrusel {
+.main__clasicos .usados div div .primer__carrusel {
   padding-top: 20px;
 }
-main .usados div div .primer__carrusel div div .audi {
+.main__clasicos .usados div div .primer__carrusel div div .audi {
   height: 44vh;
   object-fit: scale-down;
 }
-main .usados div div .primer__carrusel .boton__carrusel {
+.main__clasicos .usados div div .primer__carrusel .boton__carrusel {
   background-color: rgba(172, 172, 172, 0.2823529412);
 }
-main .usados div div .primer__carrusel .boton__carrusel:hover {
+.main__clasicos .usados div div .primer__carrusel .boton__carrusel:hover {
   background-color: rgba(222, 222, 222, 0.3921568627);
 }
-main .usados div div .div__grilla {
+.main__clasicos .usados div div .div__grilla {
   padding-top: 10px;
 }
-main .usados div div .div__grilla .marca {
+.main__clasicos .usados div div .div__grilla .marca {
   font-size: 1.3rem;
   font-weight: normal;
 }
-main .usados div div .div__grilla .descripcion__grilla {
+.main__clasicos .usados div div .div__grilla .descripcion__grilla {
   font-size: 2rem;
   font-weight: normal;
   border-bottom: 1px solid #151242;
 }
-main .usados div div .div__grilla .div__link__consulta {
+.main__clasicos .usados div div .div__grilla .div__link__consulta {
   display: flex;
   justify-content: center;
 }
-main .usados div div .div__grilla .div__link__consulta .link__consulta {
+.main__clasicos .usados div div .div__grilla .div__link__consulta .link__consulta {
   padding: 5px;
   font-family: monospace;
   border-radius: 5px;
@@ -329,11 +328,11 @@ main .usados div div .div__grilla .div__link__consulta .link__consulta {
   box-shadow: 0 0 10px #000;
   transition: transform 0.5s ease;
 }
-main .usados div div .div__grilla .div__link__consulta .link__consulta:hover {
+.main__clasicos .usados div div .div__grilla .div__link__consulta .link__consulta:hover {
   transform: scale(1.1);
 }
 
-main .div__main {
+.main__nosotros .div__main {
   background-image: url(../assets/img/consecionario.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -342,7 +341,7 @@ main .div__main {
   display: flex;
   justify-content: center;
 }
-main .div__main .titulo__parrafo {
+.main__nosotros .div__main .titulo__parrafo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -354,7 +353,7 @@ main .div__main .titulo__parrafo {
   border-radius: 20px;
   box-shadow: 0 0 10px #d0d0d0;
 }
-main .div__main .titulo__parrafo .titulo__nosotros {
+.main__nosotros .div__main .titulo__parrafo .titulo__nosotros {
   font-family: "Red Hat Display";
   font-size: 5rem;
   font-weight: normal;
@@ -362,12 +361,12 @@ main .div__main .titulo__parrafo .titulo__nosotros {
   padding: 50px 0 25px 0;
   text-align: center;
 }
-main .div__main .titulo__parrafo .linea__nosotros {
+.main__nosotros .div__main .titulo__parrafo .linea__nosotros {
   width: 30%;
   height: 2px;
   background-color: #BF0426;
 }
-main .div__main .titulo__parrafo .parrafo__nosotros {
+.main__nosotros .div__main .titulo__parrafo .parrafo__nosotros {
   text-align: center;
   font-family: "Pt serif";
   font-size: 3rem;
@@ -375,7 +374,7 @@ main .div__main .titulo__parrafo .parrafo__nosotros {
   padding: 30px 100px 30px 150px;
 }
 
-main .div__form {
+.main__contacto .div__form {
   background-image: url(../assets/img/fondo-contacto.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -383,7 +382,7 @@ main .div__form {
   display: flex;
   justify-content: center;
 }
-main .div__form .formulario {
+.main__contacto .div__form .formulario {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "form1" "input1" "form2" "input2" "form3" "input3" "form4" "input4";
@@ -396,25 +395,25 @@ main .div__form .formulario {
   box-shadow: 0 0 20px #b36262;
   gap: 30px;
 }
-main .div__form .formulario label .p__form {
+.main__contacto .div__form .formulario label .p__form {
   font-family: "Pt serif", monospace;
   font-size: 2.5rem;
   font-weight: normal;
   text-decoration: underline;
 }
-main .div__form .formulario label .p__form .p__form--1 {
+.main__contacto .div__form .formulario label .p__form .p__form--1 {
   grid-area: form1;
 }
-main .div__form .formulario label .p__form .p__form--2 {
+.main__contacto .div__form .formulario label .p__form .p__form--2 {
   grid-area: form2;
 }
-main .div__form .formulario label .p__form .p__form--3 {
+.main__contacto .div__form .formulario label .p__form .p__form--3 {
   grid-area: form3;
 }
-main .div__form .formulario label .p__form .p__form--4 {
+.main__contacto .div__form .formulario label .p__form .p__form--4 {
   grid-area: form4;
 }
-main .div__form .formulario label .input {
+.main__contacto .div__form .formulario label .input {
   padding: 10px 30px 10px 30px;
   font-family: monospace;
   font-size: 2rem;
@@ -426,19 +425,19 @@ main .div__form .formulario label .input {
   border-left: none;
   border-radius: 10px;
 }
-main .div__form .formulario label .input .input--1 {
+.main__contacto .div__form .formulario label .input .input--1 {
   grid-area: input1;
 }
-main .div__form .formulario label .input .input--2 {
+.main__contacto .div__form .formulario label .input .input--2 {
   grid-area: input2;
 }
-main .div__form .formulario label .input .input--3 {
+.main__contacto .div__form .formulario label .input .input--3 {
   grid-area: input3;
 }
-main .div__form .formulario label .input .input--4 {
+.main__contacto .div__form .formulario label .input .input--4 {
   grid-area: input4;
 }
-main .div__form .formulario label .text__area {
+.main__contacto .div__form .formulario label .text__area {
   width: 70%;
   height: 100px;
   font-family: monospace;
@@ -450,7 +449,7 @@ main .div__form .formulario label .text__area {
   border-left: none;
   border-radius: 15px;
 }
-main .div__form .formulario .animated-button {
+.main__contacto .div__form .formulario .animated-button {
   margin: auto;
   position: relative;
   width: 25%;
@@ -467,22 +466,22 @@ main .div__form .formulario .animated-button {
   overflow: hidden;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
-main .div__form .formulario .animated-button:hover {
+.main__contacto .div__form .formulario .animated-button:hover {
   box-shadow: 0 0 0 5px rgba(243, 33, 33, 0.3764705882);
 }
-main .div__form .formulario .animated-button:hover span:last-child {
+.main__contacto .div__form .formulario .animated-button:hover span:last-child {
   width: 150px;
   height: 150px;
   opacity: 1;
 }
-main .div__form .formulario .animated-button:active {
+.main__contacto .div__form .formulario .animated-button:active {
   scale: 0.95;
 }
-main .div__form .formulario .animated-button span:first-child {
+.main__contacto .div__form .formulario .animated-button span:first-child {
   position: relative;
   z-index: 1;
 }
-main .div__form .formulario .animated-button span:last-child {
+.main__contacto .div__form .formulario .animated-button span:last-child {
   position: absolute;
   top: 50%;
   left: 50%;

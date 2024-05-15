@@ -1,4 +1,5 @@
-main{
+// estilos del main de la pagina autos clasicos
+.main__clasicos{
     .div__clasicos__inicial{
         height: 100px;
         background-color: #c84a61;
@@ -21,6 +22,7 @@ main{
         padding-bottom: 20px;
         div{
             div{
+                //estilos del carrusel
                 .primer__carrusel{
                     padding-top: 20px;
                     div{
@@ -38,6 +40,7 @@ main{
                         }
                     }
                 }
+                //estilo de los datos de cada auto
                 .div__grilla{
                     padding-top: 10px;
                     .marca{
@@ -47,6 +50,7 @@ main{
                         @include font (2rem,normal);
                         border-bottom: 1px solid $color-principal-texto;
                     }
+                    // estilo del boton "consultanos"
                     .div__link__consulta{
                         display: flex;
                         justify-content: center;

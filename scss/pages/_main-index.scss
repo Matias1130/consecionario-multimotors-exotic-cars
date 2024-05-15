@@ -1,5 +1,7 @@
+//estilos del main de la pagina index
 .main__index{
     .container{
+        // Video principal de la pagina
         .video__inicio{
             padding-top: 15px;
             width: 100%;
@@ -10,6 +12,7 @@
         column-gap: 5%;
         padding-top: 20px;
         padding-bottom: 20px;
+        // Estilos de las cards
         .card{
             @include flex (column,start,center);
             text-align: center;
@@ -66,6 +69,7 @@
             }
         }
     }
+    // estilos para el carrusel principal 
     .div__titulo__carrusel{
         @include flex(column,start,stretch);
         text-align: center;
@@ -91,6 +95,7 @@
             font-family: $fuente-principal;
         }
     }
+    // estilos para los usados destacados
     .usados__destacados{
         display: grid;
         grid-template-columns: 2fr 2fr 2fr;

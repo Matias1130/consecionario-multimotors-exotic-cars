@@ -1,63 +1,68 @@
-.div__inicial{
-    @include flex (column,center,center);
-    height: 100px;
-    background-color: #82aee8;
-    .titulo__usados{
-        @include font (4rem,normal);
-        @extend %color-general;;
-        font-family: $fuente-principal;
+// estilo del main de la pagina autos usados
+.main__usados{
+    .div__inicial{
+        @include flex (column,center,center);
+        height: 100px;
+        background-color: #82aee8;
+        .titulo__usados{
+            @include font (4rem,normal);
+            @extend %color-general;;
+            font-family: $fuente-principal;
+        }
+        .subtitulo__usados{
+            @include font (2.5rem,normal);
+            @extend %color-general;
+            font-family: $fuente-principal;
+        }
     }
-    .subtitulo__usados{
-        @include font (2.5rem,normal);
-        @extend %color-general;
-        font-family: $fuente-principal;
-    }
-}
-.usados{
-    padding-bottom: 20px;
-    div{
+    .usados{
+        padding-bottom: 20px;
         div{
-            .primer__carrusel{
-                padding-top: 20px;
-                div{
+            div{
+                //estilos del carrusel
+                .primer__carrusel{
+                    padding-top: 20px;
                     div{
-                        .foto__audi{
-                            height: 44vh;
-                            object-fit: scale-down;
+                        div{
+                            .foto__audi{
+                                height: 44vh;
+                                object-fit: scale-down;
+                            }
+                        }
+                    }
+                    .boton__carrusel{
+                        background-color: #acacac48;
+                        &:hover{
+                            background-color: #dedede64;
                         }
                     }
                 }
-                .boton__carrusel{
-                    background-color: #acacac48;
-                    &:hover{
-                        background-color: #dedede64;
+                .div__grilla{
+                    padding-top: 10px;
+                    .marca{
+                        @include font (1.3rem,normal);
                     }
-                }
-            }
-            .div__grilla{
-                padding-top: 10px;
-                .marca{
-                    @include font (1.3rem,normal);
-                }
-                .descripcion__grilla{
-                    font-size: 2rem;
-                    border-bottom: 1px solid $color-principal-texto;
-                }
-                .div__link__consulta{
-                    display: flex;
-                    justify-content: center;
-                    .link__consulta{
-                        padding: map-get($map: $boton-consulta, $key: padding);
-                        font-family: map-get($map: $boton-consulta, $key:font-family );
-                        border-radius: map-get($map: $boton-consulta, $key:border-radius );
-                        background-color: map-get($map: $boton-consulta, $key:bg-color );
-                        border: map-get($map: $boton-consulta, $key:border );
-                        text-decoration: map-get($map: $boton-consulta, $key:text-decoration );
-                        color: map-get($map: $boton-consulta, $key:color );
-                        box-shadow: map-get($map: $boton-consulta, $key:box-shadow );
-                        transition: map-get($map: $boton-consulta, $key:transition );
-                        &:hover{
-                            transform: scale(1.1);
+                    .descripcion__grilla{
+                        font-size: 2rem;
+                        border-bottom: 1px solid $color-principal-texto;
+                    }
+                    // estilo del boton "consultanos"
+                    .div__link__consulta{
+                        display: flex;
+                        justify-content: center;
+                        .link__consulta{
+                            padding: map-get($map: $boton-consulta, $key: padding);
+                            font-family: map-get($map: $boton-consulta, $key:font-family );
+                            border-radius: map-get($map: $boton-consulta, $key:border-radius );
+                            background-color: map-get($map: $boton-consulta, $key:bg-color );
+                            border: map-get($map: $boton-consulta, $key:border );
+                            text-decoration: map-get($map: $boton-consulta, $key:text-decoration );
+                            color: map-get($map: $boton-consulta, $key:color );
+                            box-shadow: map-get($map: $boton-consulta, $key:box-shadow );
+                            transition: map-get($map: $boton-consulta, $key:transition );
+                            &:hover{
+                                transform: scale(1.1);
+                            }
                         }
                     }
                 }

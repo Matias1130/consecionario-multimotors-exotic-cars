@@ -1,4 +1,6 @@
+// estilo de todos los footers de las paginas del proyecto
 footer {
+    // imagen de fondo 
     background-image: url(../assets/img/fondo-footer.jpg);
     background-size: cover;
     .div__logo__footer{
@@ -21,6 +23,7 @@ footer {
             column-gap: 5px;
         }
     }
+    // estilos de los botones para las redes sociales
     .div__redes__footer{
         padding: 20px;
         display: flex;
@@ -146,6 +149,7 @@ footer {
             }
         }
     }
+    // Estilo para el copyright y el pequeño texto descriptivo sobre el concesionario
     .div__footer{
         text-align: center;
         display: flex;
