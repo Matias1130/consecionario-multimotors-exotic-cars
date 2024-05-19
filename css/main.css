@@ -225,8 +225,8 @@ header .line {
   padding-top: 20px;
 }
 .main__usados .usados div div .primer__carrusel div div .foto__audi {
-  height: 44vh;
-  object-fit: scale-down;
+  height: 300px;
+  object-fit: cover;
 }
 .main__usados .usados div div .primer__carrusel .boton__carrusel {
   background-color: rgba(172, 172, 172, 0.2823529412);
@@ -293,7 +293,7 @@ header .line {
 }
 .main__clasicos .usados div div .primer__carrusel div div .audi {
   height: 44vh;
-  object-fit: scale-down;
+  object-fit: cover;
 }
 .main__clasicos .usados div div .primer__carrusel .boton__carrusel {
   background-color: rgba(172, 172, 172, 0.2823529412);
