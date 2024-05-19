@@ -291,8 +291,8 @@ header .line {
 .main__clasicos .usados div div .primer__carrusel {
   padding-top: 20px;
 }
-.main__clasicos .usados div div .primer__carrusel div div .audi {
-  height: 44vh;
+.main__clasicos .usados div div .primer__carrusel div div .foto__audi {
+  height: 300px;
   object-fit: cover;
 }
 .main__clasicos .usados div div .primer__carrusel .boton__carrusel {
