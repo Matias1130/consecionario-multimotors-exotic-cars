@@ -764,8 +764,14 @@ footer .div__footer .copy {
   .main__index .usados__destacados .descripcion__usado {
     font-size: 2rem;
   }
-  .main__usados div .titulo__usados {
-    font-size: 2rem;
+  .main__usados .div__inicial .titulo__usados {
+    font-size: 2.3rem;
+  }
+  .main__usados .div__inicial .subtitulo__usados {
+    font-size: 1.5rem;
+  }
+  .main__clasicos .div__clasicos__inicial .titulo__usados {
+    font-size: 2rem !important;
   }
   .main__clasicos .div__clasicos__inicial .descripcion__clasicos .descripcion {
     font-size: 1.4rem;
